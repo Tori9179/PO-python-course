@@ -1,0 +1,12 @@
+tuple1 = (10, 100, 7, 11, 6)
+tuple2 = (20, 17, 8, 46, 81)
+print(f'Tuple 1: {tuple1}')
+print(f'Tuple 2: {tuple2}')
+print('Adding: ' + str(tuple1 + tuple2))
+print('Multiply: ' + str(tuple1 * 2))
+print('len: ' + str(len(tuple2)))
+print('max: ' + str(max(tuple2)))
+list1 = list(tuple1)
+list1[1] = 300
+tuple1 = tuple(i for i in list1)
+print(f'After changing item in Tuple 1: {tuple1}')
